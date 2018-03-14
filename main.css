@@ -1,32 +1,100 @@
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --gunmetal: #283044;
+  --electric-blue: #054A91;
+  --steel-blue: #3E7CB1;
+  --coquelicot: #E53D00;
+  --ghost-white: #FAFAFF;
+}
+
 .fixed-nav-bar {
   position: fixed;
   left: 0;
   top: 0;
-  height: 70px;
+  height: 50px;
   width: 100%;
-  background-color: #283044;
-  opacity: 0.9;
+  background-color: var(--gunmetal);
+  opacity: 0.6;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  z-index: 999;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--ghost-white);
   padding-bottom: 1%;
 }
 
 .fixed-nav-bar > a {
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5em;
   text-decoration: none;
+  font-weight: normal;
+  color: var(--ghost-white);
+}
+
+#md-logo {
+  max-height: 50px;
+  TODO: align center;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  height: 800px;
+  width: 100%;
+}
+
+#first-section {
+  background-image: url("paper-background.jpg");
+  opacity: 0.95;
+  background-size: cover;
+}
+
+#cta-content {
+  padding: 15%;
+  width: 40%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cta-title {
+  color: var(--coquelicot);
+  font-size: 3em;
+  text-align: center;
+}
+
+#cta-subtitle {
+  color: var(--steel-blue);
+  font-size: 1.25em;
+  text-transform: uppercase;
   font-weight: bold;
-  color: #FAFAFF;
 }
 
-h4 {
-  font-family: Arial, sans-serif;
+#cta-text {
+  color: var(--ghost-white);
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+#cta-button {
+  background-color: var(--electric-blue);
+  border: none;
+  color: var(--ghost-white);
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
   font-size: 1.5em;
-  color: #FAFAFF;
-}
-
-md-logo {
-
+  border-radius: 4px;
 }
