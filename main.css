@@ -11,6 +11,17 @@
   --ghost-white: #FAFAFF;
 }
 
+body {
+  margin: 0;
+}
+
+section {
+  height: 800px;
+  width: 100%;
+}
+
+/* navigation */
+
 .fixed-nav-bar {
   position: fixed;
   left: 0;
@@ -40,14 +51,7 @@
   TODO: align center;
 }
 
-body {
-  margin: 0;
-}
-
-section {
-  height: 800px;
-  width: 100%;
-}
+/* cta */
 
 #first-section {
   background-image: url("paper-background.jpg");
@@ -69,6 +73,7 @@ section {
   color: var(--coquelicot);
   font-size: 3em;
   text-align: center;
+  margin: 0;
 }
 
 #cta-subtitle {
@@ -89,7 +94,7 @@ section {
   background-color: var(--electric-blue);
   border: none;
   color: var(--ghost-white);
-  padding: 15px 30px;
+  padding: 10px 25px;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
@@ -97,4 +102,98 @@ section {
   display: inline-block;
   font-size: 1.5em;
   border-radius: 4px;
+}
+
+/* about us */
+
+#about-us {
+  background-color: var(--gunmetal);
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us-top {
+  height: 15%;
+  padding: 5% 5% 0 5%;
+}
+
+.section-title {
+  color: var(--coquelicot);
+  font-size: 3em;
+  margin: 0;
+}
+
+.section-subtitle {
+  color: var(--steel-blue);
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#about-us-bottom {
+  height: 70%;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description-box {
+  background-color: var(--electric-blue);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+  margin: 0.5%;
+  height: 50%;
+}
+
+.description-title {
+  display: flex;
+  height: 25%;
+  align-items: center;
+}
+
+.description-number {
+  color: var(--coquelicot);
+  font-weight: bold;
+  font-size: 2em;
+  display: inline;
+  margin-left: 3%;
+}
+
+.description-subtitle {
+  color: var(--ghost-white);
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  display: inline;
+  margin-left: 3%;
+}
+
+.text-box {
+  height: 75%;
+  margin: 3%;
+  display: flex;
+  align-items: flex-start;
+}
+
+h5 {
+  color: var(--ghost-white);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#learn-more-button {
+  background-color: var(--steel-blue);
+  border: none;
+  color: var(--ghost-white);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  border-radius: 4px;
+  width: 80px;
+  padding: 6px;
+  margin: 10px;
 }
