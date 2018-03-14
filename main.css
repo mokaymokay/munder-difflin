@@ -104,18 +104,7 @@ section {
   border-radius: 4px;
 }
 
-/* about us */
-
-#about-us {
-  background-color: var(--gunmetal);
-  display: flex;
-  flex-direction: column;
-}
-
-#about-us-top {
-  height: 15%;
-  padding: 5% 5% 0 5%;
-}
+/* general section */
 
 .section-title {
   color: var(--coquelicot);
@@ -129,6 +118,19 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   margin: 10px 0;
+}
+
+/* about us */
+
+#about-us {
+  background-color: var(--gunmetal);
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us-top {
+  height: 15%;
+  padding: 5% 5% 0 5%;
 }
 
 #about-us-bottom {
@@ -196,4 +198,55 @@ h5 {
   width: 80px;
   padding: 6px;
   margin: 10px;
+}
+
+/* team */
+
+#team {
+  background-color: var(--ghost-white);
+  display: flex;
+  flex-direction: column;
+}
+
+#team-top {
+  height: 15%;
+  padding: 5% 5% 0 5%;
+}
+
+#team-bottom {
+  height: 70%;
+  width: 80%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#team-photo {
+  align-self: left;
+  max-height: 450px;
+  max-width: 600px;
+}
+
+#team-photo-section {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+#team-list > li {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--electric-blue);
+}
+
+li {
+  font-size: 1.5em;
+  padding: 5px;
+  color: var(--gunmetal);
 }
