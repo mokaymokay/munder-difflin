@@ -40,15 +40,16 @@ section {
   padding-bottom: 1%;
 }
 
-.fixed-nav-bar > a {
+.nav-element {
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
   color: var(--ghost-white);
 }
 
+TODO: align center;
+
 #md-logo {
   max-height: 50px;
-  TODO: align center;
 }
 
 /* cta */
@@ -56,11 +57,14 @@ section {
 #first-section {
   background-image: url("paper-background.jpg");
   opacity: 0.95;
+  background-color: var(--gunmetal);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #cta-content {
-  padding: 15%;
+  padding: 16% 5%;
   width: 40%;
   z-index: 100;
   display: flex;
@@ -79,6 +83,7 @@ section {
 #cta-subtitle {
   color: var(--steel-blue);
   font-size: 1.25em;
+  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -182,7 +187,6 @@ section {
 h5 {
   color: var(--ghost-white);
   font-size: 1.2em;
-  font-weight: bold;
 }
 
 #learn-more-button {
@@ -279,6 +283,7 @@ blockquote {
   font-style: italic;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2em;
+  color: var(--gunmetal);
 }
 
 .bqstart {
@@ -309,6 +314,7 @@ blockquote {
 .client-info-text {
   display: flex;
   flex-direction: column;
+  color: var(--gunmetal);
 }
 
 .client-logo {
@@ -328,4 +334,33 @@ blockquote {
   font-size: 1em;
   font-weight: bold;
   margin: 10px 0;
+}
+
+/* footer */
+
+footer {
+  display: block;
+  padding: 2%;
+}
+
+/* animations */
+
+.faded {
+  opacity: 0.5;
+}
+
+.show {	animation: show 300ms forwards; }
+
+@keyframes show {
+	from {	opacity: 0.5; }
+	to {	opacity: 1; }
+}
+
+.fade {
+	animation: fade 300ms forwards;
+}
+
+@keyframes fade {
+  from {	opacity: 1; }
+	to {	opacity: 0.5; }
 }
