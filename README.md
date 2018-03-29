@@ -9,7 +9,7 @@
 * The most exciting feature is probably the flickering lightbulb that users can see upon loading the webpage. A MD associate is showing a piece of paper that is not just paper. It is representative of what MD's actually sells, **solutions to their client's paper needs with a human touch**, rather than just their quality products.
 
 
-## Acknowledgments
+## Acknowledgements
 
 * [Button hover animation](https://github.com/IanLunn/Hover) by Ian Lunn
 * [Flicker keyframe animation](http://animista.net/play/entrances/flicker-in) by Animista
